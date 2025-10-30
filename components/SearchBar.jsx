@@ -5,7 +5,7 @@ const SearchBar = function () {
         Come sarà la giornata oggi?
       </h1>
 
-      <div className="flex w-full max-w-4/10 gap-4 pt-5">
+      <div className="flex w-full max-w-4/10 gap-4 pt-5 pb-10">
         <input
           type="text"
           placeholder="Inserisci la città"
