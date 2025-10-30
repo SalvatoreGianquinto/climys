@@ -11,14 +11,14 @@ const SearchBar = ({ onSearch }) => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-full mt-6">
-      <h1 className="font-medium text-5xl mb-6 pt-10 text-white text-center">
+    <div className="flex flex-col items-center justify-center w-full mt-6 px-4 sm:px-6 md:px-8">
+      <h1 className="font-medium text-3xl sm:text-4xl md:text-5xl mb-6 pt-6 sm:pt-8 md:pt-10 text-white text-center">
         Come sarà la giornata oggi?
       </h1>
 
       <form
         onSubmit={handleSubmit}
-        className="flex w-full max-w-lg gap-4 pt-5 pb-10"
+        className="flex w-full max-w-4xl gap-4 pt-5 pb-10"
       >
         <input
           type="text"
