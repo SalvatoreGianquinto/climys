@@ -1,9 +1,10 @@
+import Header from "../components/Header"
 import "./App.css"
 
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-blue-500 text-white text-3xl">
-      Climys è pronto! 🌤️
+    <div className="min-h-screen bg-blue-900 flex flex-col relative">
+      <Header />
     </div>
   )
 }
