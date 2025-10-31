@@ -3,9 +3,8 @@ import { useEffect, useState } from "react"
 import SearchBar from "./SearchBar"
 import WeatherCard from "./WeatherCard"
 
-const WeatherContainer = function () {
+const WeatherContainer = function ({ city, setCity }) {
   const [weather, setWeather] = useState(null)
-  const [city, setCity] = useState("Milano")
 
   const API_KEY = import.meta.env.VITE_WEATHER_API_KEY
   const BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
