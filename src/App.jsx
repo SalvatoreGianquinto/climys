@@ -1,3 +1,4 @@
+import ForecastCard from "../components/ForecastCard"
 import Header from "../components/Header"
 import WeatherCard from "../components/WeatherCard"
 import WeatherContainer from "../components/WeatherContainer"
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <WeatherCard />
       <WeatherContainer />
+      <ForecastCard />
     </div>
   )
 }
