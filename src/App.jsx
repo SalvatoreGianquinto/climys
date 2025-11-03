@@ -13,7 +13,7 @@ function App() {
   const isDay = hour >= 6 && hour < 18
 
   const bgGradient = isDay
-    ? "bg-gradient-to-b from-blue-700 via-blue-400 to-sky-300"
+    ? "bg-gradient-to-b from-blue-700 via-blue-400 to-sky-400"
     : "bg-gradient-to-b from-indigo-900 via-blue-900 to-indigo-950"
   return (
     <div className={`min-h-screen flex flex-col ${bgGradient} relative`}>
