@@ -10,7 +10,7 @@ const ForecastCard = ({ data }) => {
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
         {data.map((day, index) => {
-          const date = new Date(day.dt * 1000)
+          const date = new Date(day.dt)
           const dayName = days[date.getDay()]
           return (
             <div
