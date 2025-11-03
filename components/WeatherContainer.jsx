@@ -13,7 +13,7 @@ const WeatherContainer = function ({ city, setCity }) {
     if (!city) return
 
     let cityParam = city
-    if (city.toLoweCase() === "roma") {
+    if (city.toLowerCase() === "roma") {
       cityParam = "Rome,it"
     }
 
