@@ -12,10 +12,15 @@ const WeatherContainer = function ({ city, setCity }) {
   useEffect(() => {
     if (!city) return
 
+    let cityParam = city
+    if (city.toLoweCase() === "roma") {
+      cityParam = "Rome,it"
+    }
+
     axios
       .get(BASE_URL, {
         params: {
-          q: city,
+          q: cityParam,
           units: "metric",
           appid: API_KEY,
           lang: "it",
