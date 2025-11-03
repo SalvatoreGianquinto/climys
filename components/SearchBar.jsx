@@ -12,7 +12,7 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full mt-6 px-4 sm:px-6 md:px-8">
-      <h1 className="font-medium text-3xl sm:text-4xl md:text-5xl mb-6 pt-6 sm:pt-8 md:pt-10 text-white text-center">
+      <h1 className="font-medium text-3xl sm:text-4xl md:text-4xl mb-6 pt-6 sm:pt-6 md:pt-6 text-white text-center">
         Come sarà la giornata oggi?
       </h1>
 

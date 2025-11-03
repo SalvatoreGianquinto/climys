@@ -4,7 +4,7 @@ const WeatherCard = ({ data }) => {
   const { name, main, wind, rain } = data
 
   return (
-    <div className="flex flex-col items-center w-full mt-8 px-4 sm:px-6 md:px-0">
+    <div className="flex flex-col items-center w-full mt-5 px-4 sm:px-6 md:px-0">
       <div className="border border-white/30 w-full max-w-2xl h-60 p-6 rounded-xl shadow-lg bg-white/20 backdrop-blur-md flex flex-col justify-center">
         <div className="flex w-full justify-between items-center">
           <div className="flex flex-col text-white">

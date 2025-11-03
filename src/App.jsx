@@ -8,8 +8,15 @@ import "./App.css"
 
 function App() {
   const [city, setCity] = useState("")
+  const hour = new Date().getHours()
+
+  const isDay = hour >= 6 && hour < 18
+
+  const bgGradient = isDay
+    ? "bg-gradient-to-b from-blue-700 via-blue-400 to-sky-300"
+    : "bg-gradient-to-b from-indigo-900 via-blue-900 to-indigo-950"
   return (
-    <div className="min-h-screen bg-blue-900 flex flex-col relative">
+    <div className={`min-h-screen flex flex-col ${bgGradient} relative`}>
       <Header />
       <WeatherCard />
       <ForecastCard />

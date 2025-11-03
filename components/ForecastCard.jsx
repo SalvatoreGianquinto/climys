@@ -8,16 +8,10 @@ const ForecastCard = ({ data }) => {
       <h2 className="text-2xl text-white font-semibold mb-4 text-center">
         Previsioni giornaliere
       </h2>
-
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
         {data.map((day, index) => {
-          const date = new Date(day.dt * 1000)
+          const date = new Date(day.dt)
           const dayName = days[date.getDay()]
-
-          const { temp_min, temp_max, weather } = day
-          const description = weather.description
-          const icon = weather.icon
-
           return (
             <div
               key={index}
@@ -25,12 +19,12 @@ const ForecastCard = ({ data }) => {
             >
               <p className="text-sm font-medium">{dayName}</p>
               <img
-                src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
-                alt={description}
+                src={`https://openweathermap.org/img/wn/${day.icon}@2x.png`}
+                alt="weather icon"
                 className="w-12 h-12"
               />
               <p className="text-lg font-semibold tracking-wide">
-                {Math.round(temp_max)}°/{Math.round(temp_min)}°
+                {day.temp_max}°/{day.temp_min}°
               </p>
             </div>
           )
